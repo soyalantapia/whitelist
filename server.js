@@ -31,7 +31,7 @@ mongoose.connect(mongo_uri, function(err){
 
 
 //escuchando el puerto
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(port, () => console.log(`Abierto el puerto ${port}!`))
 
 module.exports = app;
 
