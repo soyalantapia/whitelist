@@ -1,5 +1,5 @@
 const mongoose = require('mongoose')
-const User = require('../models/User')
+const User = require('../models/User_whitelist')
 
 //Buscar todos los usuarios
 const findAllUsers = (req, res) =>{
@@ -24,8 +24,8 @@ const addUser = (req,res) =>{
     let user = new User({ 
         email: req.body.email,
         name: req.body.name,
-        message: req.body.message
-       // wallet: req.body.wallet
+        phone: req.body.phone,
+        wallet: req.body.wallet
 
      })
      user.save((err,usr)=>{
