@@ -33,7 +33,7 @@ app.use("/api/whitelist", Users);
 
 
 //puerto
-const port = 3001;
+const port = 3002;
 
 //mongo
 const mongo_uri = 'mongodb+srv://alantapia:2425cmpsm@cluster0.hozyc.mongodb.net/ejemplo?retryWrites=true&w=majority';
